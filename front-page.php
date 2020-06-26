@@ -3,8 +3,12 @@
 get_header();
 
 ?>
-<h1>Pages D'acceuil</h1>
-<h2>liste des pages</h2>
+
+<div class="container">
+    <div class="text-center">
+        <h1>Pages D'acceuil</h1>
+        <h2>liste des pages</h2>
+    </div>
 <?php
 
 // WP_Query arguments
@@ -50,6 +54,8 @@ if ( $query->have_posts() ):
     <article>
         <h2><a href="<?= get_permalink(); ?>"><?php the_title(); ?></a></h2>
     </article>
+
+</div>
 <?php
     endwhile;
 endif;

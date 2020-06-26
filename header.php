@@ -7,6 +7,6 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-light" style="background-color: #00FF7F;">
         <?php wp_nav_menu( array( 'theme_location' => 'main') ); ?>
     </nav>
