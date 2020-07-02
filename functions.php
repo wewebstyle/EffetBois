@@ -11,6 +11,15 @@ function wpm_hide_errors() {
 	return "L'identifiant ou le mot de passe est incorrect";
 }
 
+function logos() {
+	add_theme_support('custom-logo', array(
+		'flex-height' => true,
+		'flex-width'  => true,
+	));
+}
+add_action('after_setup_theme','logos');
+
+
 // remove admin bar
 add_action('get_header', 'remove_admin_login_header');
 

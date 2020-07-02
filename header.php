@@ -14,6 +14,11 @@
     <nav class="navbar navbar-light" style="background-color: #00FF7F;">
         <div class="container">
             <ul class="navbar-nav mr-auto">
+            <?php 
+                $custom_logo_id = get_theme_mod('custom_logo');
+                $image = wp_get_attachment_image_src($custom_logo_id , 'full');
+            ?>
+            <img src="<?php echo $image[0]; ?>" alt="">
             <?php wp_nav_menu( array( 
                 'container'  => '',
                 'items_wrap' => '%3$s',
