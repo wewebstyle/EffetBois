@@ -39,7 +39,7 @@ add_action( 'wp_enqueue_scripts', 'effet' );
 
 // Déclaration CSS 
 wp_enqueue_style( 
-	'capitaine', 
+	'effect', 
 	get_template_directory_uri() . '/css/main.css',
 	array(), 
 	'1.0'
@@ -47,7 +47,7 @@ wp_enqueue_style(
 
 // Déclarer style.css à la racine du thème
 wp_enqueue_style( 
-	'capitaine',
+	'effect',
 	get_stylesheet_uri(), 
 	array(), 
 	'1.0'

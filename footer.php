@@ -1,8 +1,5 @@
-<footer>
-    <ul>
-        <li><a href="<?= site_url(); ?>/page-d-exemple">Page d'exemple</a></li>
-        <li><a href="<?= site_url(); ?>/politique-de-confidentialite">Politique de confidentialité</a></li>
-    </ul>
+<footer class="footer navbar-light" style="background-color: #00FF7F;">
+
 </footer>
 </body>
 </html>

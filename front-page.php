@@ -5,10 +5,8 @@ get_header();
 ?>
 
 <div class="container">
-    <div class="text-center">
-        <h1>Pages D'acceuil</h1>
-        <h2>liste des pages</h2>
-    </div>
+    <h1>Pages D'acceuil</h1>
+    <h2>liste des pages</h2>
 <?php
 
 // WP_Query arguments

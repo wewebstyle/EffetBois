@@ -1,3 +1,42 @@
 .navbar ul {
     list-style: none;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+
+.navbar li {
+    margin: 0 5px;
+    text-justify: auto;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.navbar {
+    height: 100px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-nav {
+    flex-direction: unset !important;
+}
+
+.collapse:not(.show) {
+    display: block !important;
+}
+
+footer {
+    height: 80px;
+    background:#ccc;
+    position:absolute;
+    bottom:0;
+    width:100%;
 }
