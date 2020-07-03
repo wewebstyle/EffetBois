@@ -52,7 +52,6 @@
         margin-left: 0px;
         position: absolute;
         left: -400px;
-        width: 600px;
     }
     .effect_logos {
         height: 150px;
@@ -63,6 +62,6 @@
 
 @media only screen and (min-width: 1200px) {
     .navbar ul {
-        left: -1000px;
+        left: -1400px;
     }
 }
