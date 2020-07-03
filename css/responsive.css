@@ -22,8 +22,15 @@
 
 @media only screen and (min-width: 375px) {
     .change ul {
-        left: -330px;
-        width: 395px;
+        left: -350px;
+        width: 415px;
+    }
+}
+
+@media only screen and (min-width: 568px) {
+    .change ul {
+        left: -510px;
+        width: 575px;
     }
 }
 
