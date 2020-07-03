@@ -1,3 +1,13 @@
+#fond {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),url('../img/fond.jpg');
+    
+}
+
+.effect_logos {
+    height: 150px;
+    width: 150px;
+}
+
 .navbar ul {
     list-style: none;
     font-family: 'Poppins', sans-serif;

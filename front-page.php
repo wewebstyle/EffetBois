@@ -4,7 +4,7 @@ get_header();
 
 ?>
 
-<div class="container">
+<div class="container margin">
     <h1>Pages D'acceuil</h1>
     <h2>liste des pages</h2>
 <?php
