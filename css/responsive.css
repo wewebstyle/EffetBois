@@ -11,21 +11,51 @@
         position: absolute;
     }
     .change ul {
-        display: flex;
+        display: block;
         position: absolute;
         left: -300px;
         width: 365px;
+        background-color: #00FF7F;
+        top: 75px;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    .change ul {
+        left: -330px;
+        width: 395px;
     }
 }
 
 @media only screen and (min-width: 700px) {
+    .menu {
+        visibility: hidden;
+    }
     .navbar ul {
+        visibility: visible;
         display: flex;
-        margin-left: 150px;
+    }
+    .change {
+        display: none;
+    }
+
+    .navbar ul {
+        top: 15px;
+        display: flex;
+        margin-left: 0px;
+        position: absolute;
+        left: -400px;
+        width: 600px;
     }
     .effect_logos {
         height: 150px;
         position: absolute;
         top: 14px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .navbar ul {
+        left: -1000px;
     }
 }
