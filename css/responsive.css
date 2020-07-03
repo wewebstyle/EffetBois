@@ -1,0 +1,31 @@
+@media only screen and (min-width: 160px) {
+    .navbar ul {
+        display: none;
+    }
+    .effect_logos {
+        height: 90px;
+        position: absolute;
+        top: 4px;
+    }
+    .menu .change {
+        position: absolute;
+    }
+    .change ul {
+        display: flex;
+        position: absolute;
+        left: -300px;
+        width: 365px;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .navbar ul {
+        display: flex;
+        margin-left: 150px;
+    }
+    .effect_logos {
+        height: 150px;
+        position: absolute;
+        top: 14px;
+    }
+}

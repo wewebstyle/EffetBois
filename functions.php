@@ -43,7 +43,8 @@ register_nav_menus( array(
 function effet() {
     // chargement de la feuille de style du thème
     wp_enqueue_style( 'bootstrap', "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css", [] );
-    wp_enqueue_style( 'main', get_stylesheet_directory_uri().'css/main.css', ['bootstrap'] );
+	wp_enqueue_style( 'responsive', get_stylesheet_directory_uri().'css/responsive.css', ['bootstrap'] );
+	wp_enqueue_style( 'main', get_stylesheet_directory_uri().'css/main.css', ['responsive'] );
 }
 add_action( 'wp_enqueue_scripts', 'effet' );
 
@@ -54,6 +55,14 @@ wp_enqueue_style(
 	array(), 
 	'1.0'
 );
+
+wp_enqueue_style( 
+	'resp', 
+	get_template_directory_uri() . '/css/responsive.css',
+	array(), 
+	'1.0'
+);
+
 
 // Déclarer style.css à la racine du thème
 wp_enqueue_style( 

@@ -5,14 +5,48 @@
 
 .effect_logos {
     height: 150px;
-    width: 150px;
+    position: absolute;
+    top: 14px;
 }
+
+/* MENU  */
+.menu {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    position: absolute;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 37px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+  
 
 .navbar ul {
     list-style: none;
     font-family: 'Poppins', sans-serif;
     width: 100%;
 }
+
 
 .navbar li {
     margin: 0 5px;
