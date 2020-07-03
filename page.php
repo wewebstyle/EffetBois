@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="container">
+<div class="container margin">
 
     <article id="page-<?php the_ID(); ?>" <?php post_class(); ?> >
 

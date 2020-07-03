@@ -11,6 +11,7 @@ function wpm_hide_errors() {
 	return "L'identifiant ou le mot de passe est incorrect";
 }
 
+// Ajout du changement du logos dans les parametre du identity site 
 function logos() {
 	add_theme_support('custom-logo', array(
 		'flex-height' => true,

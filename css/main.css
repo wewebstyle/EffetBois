@@ -33,6 +33,10 @@
     display: block !important;
 }
 
+.margin {
+    margin-top: 15px;
+}
+
 footer {
     height: 80px;
     width:100%;
