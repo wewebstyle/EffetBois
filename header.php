@@ -11,7 +11,7 @@
 </head>
 <body id="fond">
 
-    <nav class="navbar navbar-light" style="background-color: #00FF7F;">
+    <nav class="navbar navbar-light" style="background-color: #98FB98;">
     <?php 
         $custom_logo_id = get_theme_mod('custom_logo');
         $image = wp_get_attachment_image_src($custom_logo_id , 'full');
