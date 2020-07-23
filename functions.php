@@ -22,8 +22,7 @@ function logos() {
 }
 add_action('after_setup_theme','logos');
 
-
-// remove admin bar
+// Remove admin bar
 add_action('get_header', 'remove_admin_login_header');
 
 function remove_admin_login_header() {
@@ -45,8 +44,8 @@ register_nav_menus( array(
 function effet() {
     // chargement de la feuille de style du thème
     wp_enqueue_style( 'bootstrap', "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css", [] );
-	wp_enqueue_style( 'responsive', get_stylesheet_directory_uri().'css/responsive.css', ['bootstrap'] );
-	wp_enqueue_style( 'main', get_stylesheet_directory_uri().'css/main.css', ['responsive'] );
+	wp_enqueue_style( 'main', get_stylesheet_directory_uri().'/css/main.css', ['bootstrap'] );
+	wp_enqueue_style( 'responsive', get_stylesheet_directory_uri().'/css/responsive.css', ['main'] );
 }
 add_action( 'wp_enqueue_scripts', 'effet' );
 
@@ -58,7 +57,6 @@ remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wra
 add_action('woocommerce_before_main_content', 'my_theme_wrapper_start', 10);
 add_action('woocommerce_after_main_content', 'my_theme_wrapper_end', 10);
 
-
 function my_theme_wrapper_start() {
     echo '<section id="main">';
 }
@@ -66,12 +64,12 @@ function my_theme_wrapper_start() {
 function my_theme_wrapper_end() {
     echo '</section>';
 }
+
 // Ajout du support WooCommerces
 function mytheme_add_woocommerce_support() {
     add_theme_support( 'woocommerce', array(
         'thumbnail_image_width' => 250,
         'single_image_width'    => 300,
-
         'product_grid'          => array(
             'default_rows'    => 3,
             'min_rows'        => 2,
@@ -85,6 +83,9 @@ function mytheme_add_woocommerce_support() {
 }
 
 add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
+
+// Declare support for selective refreshing of widgets
+add_theme_support( 'customize-selective-refresh-widgets' );
 
 
 // Déclaration CSS 
@@ -102,7 +103,6 @@ wp_enqueue_style(
 	'1.0'
 );
 
-
 // Déclarer style.css à la racine du thème
 wp_enqueue_style( 
 	'effect',
@@ -110,4 +110,3 @@ wp_enqueue_style(
 	array(), 
 	'1.0'
 );
-
