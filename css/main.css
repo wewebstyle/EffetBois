@@ -88,9 +88,11 @@
 
 .margin {
     margin-top: 15px;
+    margin-bottom: 200px;
 }
 
 footer {
-    height: 490px;
+    padding-top: 40px;
+    height: 100px;
     width:100%;
 }
