@@ -11,26 +11,32 @@
 </head>
 <body id="fond">
 
-    <nav class="navbar navbar-light" style="background-color: #98FB98;">
+    <nav class="navbar navbar-light" style="background-color: #DEB887;">
     <?php 
         $custom_logo_id = get_theme_mod('custom_logo');
         $image = wp_get_attachment_image_src($custom_logo_id , 'full');
     ?>
     <img class="effect_logos" data-src="" src="<?php echo $image[0];?>" alt="logos">
         <div class="container">
+            <div class="navbar-nav mr-auto desktop">
+                <?php wp_nav_menu( array( 
+                    'container'  => '',
+                    'items_wrap' => '%3$s',
+                    )); ?> 
+                </div>
             <div class="menu" onclick="myFunction(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-            <ul href="#wrap" id="open" class="navbar-nav mr-auto">
-            <?php wp_nav_menu( array( 
-                'container'  => '',
-                'items_wrap' => '%3$s',
-                )); ?>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-            <ul>
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul href="#wrap" id="open" class="mobile navbar-nav mr-auto">
+                <?php wp_nav_menu( array( 
+                    'container'  => '',
+                    'items_wrap' => '%3$s',
+                    )); ?>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <ul>
             </div>
             <script>
             function myFunction(x) {
