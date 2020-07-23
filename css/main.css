@@ -3,6 +3,16 @@
     
 }
 
+.desktop{
+    display: flex;
+    margin: 0 auto;
+    
+}
+
+.desktop li {
+    font-family: 'Poppins', sans-serif;
+}
+
 .effect_logos {
     height: 150px;
     position: absolute;
@@ -81,6 +91,6 @@
 }
 
 footer {
-    height: 80px;
+    height: 490px;
     width:100%;
 }

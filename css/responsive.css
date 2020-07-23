@@ -1,7 +1,12 @@
 @media only screen and (min-width: 160px) {
+    .desktop{
+        display: none;
+        
+    }    
     .navbar ul {
         display: none;
     }
+
     .effect_logos {
         height: 90px;
         position: absolute;
@@ -38,30 +43,25 @@
     .menu {
         visibility: hidden;
     }
-    .navbar ul {
-        visibility: visible;
+    .desktop{
         display: flex;
-    }
-    .change {
-        display: none;
-    }
-
-    .navbar ul {
-        top: 15px;
-        display: flex;
-        margin-left: 0px;
-        position: absolute;
-        left: -400px;
-    }
+        
+    }    
     .effect_logos {
         height: 150px;
         position: absolute;
         top: 14px;
     }
+    #open {
+        visibility: hidden;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
+}
+
+@media only screen and (min-width: 1400px) {
     .navbar ul {
-        left: -1400px;
+        display: none;
     }
 }
