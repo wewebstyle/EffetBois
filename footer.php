@@ -1,4 +1,4 @@
-<footer class="footer fixed-bottom" style="background-color: #98FB98;">
+<footer class="footer" style="background-color: #DEB887;">
     <div class="effect_copy">
 
     </div>
