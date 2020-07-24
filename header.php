@@ -11,7 +11,7 @@
 </head>
 <body id="fond">
 
-    <nav class="navbar navbar-light fixed-top" style="background-color: #DEB887;">
+    <nav class="navbar navbar-light" style="background-color: #DEB887;">
     <?php 
         $custom_logo_id = get_theme_mod('custom_logo');
         $image = wp_get_attachment_image_src($custom_logo_id , 'full');
@@ -42,6 +42,22 @@
             function myFunction(x) {
             x.classList.toggle("change");
             }
+            </script>
+            <script>
+                (function($){
+                    $(document).ready(function(){
+                        var offset = $(".navbar").offset().top;
+                        $(document).scroll(function(){
+                            var scrollTop = $(document).scrollTop();
+                            if(scrollTop > offset){
+                                $(".navbar").addClass("fixed-top");
+                            }
+                            else {
+                                $(".navbar").removeClass("fixed-top");
+                            }
+                        });
+                    });
+                })(jQuery);
             </script>
         </div>
     </nav>
