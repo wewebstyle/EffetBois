@@ -1,4 +1,8 @@
 @media only screen and (min-width: 160px) {
+    .margin {
+        margin-top: 15px;
+        margin-bottom: 200px;
+    }
     .desktop{
         display: none;
         
@@ -54,10 +58,17 @@
     }
     #open {
         visibility: hidden;
-    }
+
 }
 
 @media only screen and (min-width: 1200px) {
+    .margin {
+        margin-top: 15px;
+        margin-bottom: 0px;
+    }
+    .footer {
+        padding-top: 0px;
+    }
 }
 
 @media only screen and (min-width: 1400px) {
